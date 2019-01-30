@@ -1,0 +1,26 @@
+* {box-sizing: border-box}
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.header {
+    text-align: center;
+    padding: 32px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.galeria img {
+    width: calc(33.333% - 10px);
+    height: auto;
+    margin: 5px;
+}
+
+@media (max-width: 800px) {
+    .galeria img {width: calc(50% - 10px)}
+}
+@media (max-width: 500px) {
+    .galeria img {width: calc(100% - 10px)}
+}
